@@ -4,7 +4,7 @@ from pyrobosim.navigation.a_star import AstarPlanner
 from pyrobosim.navigation.rrt import RRTPlanner
 from pyrobosim.navigation.prm import PRMPlanner
 from pyrobosim.navigation.world_graph import WorldGraphPlanner
-
+from pyrobosim.navigation.rrt_bedrock import RRTBedrockPlanner
 
 class PathPlanner:
     """
@@ -24,6 +24,7 @@ class PathPlanner:
         self.planners = {
             "astar": AstarPlanner,
             "rrt": RRTPlanner,
+            "rrt_bedrock": RRTBedrockPlanner,
             "prm": PRMPlanner,
             "world_graph": WorldGraphPlanner,
         }
